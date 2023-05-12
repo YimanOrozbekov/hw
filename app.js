@@ -1,13 +1,27 @@
-//классы опер...
-//! - не, +, - ;
-//тернарные опер...
-// var age = prompt('enter your age')
-// console.log(age >= 20 && age <= 50 ? 'вы приняты' : 'error' )
-// var num = prompt('введите число')
-// console.log(num > 10  ? 'больше десяти' : 'меньше десятиgit initgit initgit initgit init' )
-var matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-console.log(matrix)
+
+//  HW_3.1  //
+
+for(var i = 0; i <= 100; i++) {
+    if (i % 5 === 0 && i % 3 === 0) {
+        console.log('fizzBuzz')
+    } else if (i % 5 === 0) {
+        console.log('fizz')
+    } else if (i % 3 === 0) {
+        console.log('fizz')
+    } else {
+        console.log(i)
+    }
+}
+
+//HW_3.2
+
+var milkAndBeer = ['milk', 'beer', 'beer', 'milk', 'milk']
+var bad = ['beer']
+for (var i = 0; i < milkAndBeer.length; i++){
+    if(bad.includes(milkAndBeer[i].toLowerCase())){
+        console.log(`${milkAndBeer[i]} BAD`)
+        continue
+    }
+
+    console.log(`${milkAndBeer[i]} GOOD`)
+}
